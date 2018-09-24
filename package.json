@@ -5,15 +5,29 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "capacitor-init": "vue-cli-service capacitor-init",
+    "capacitor-copy": "vue-cli-service capacitor-copy",
+    "capacitor-open": "vue-cli-service capacitor-open",
+    "capacitor-update": "vue-cli-service capacitor-update"
   },
   "dependencies": {
-    "vue": "^2.5.17"
+    "@capacitor/cli": "^1.0.0-alpha.38",
+    "@capacitor/core": "^1.0.0-alpha.38",
+    "vue": "^2.5.17",
+    "vue-class-component": "^6.0.0",
+    "vue-property-decorator": "^7.0.0",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.3",
     "@vue/cli-plugin-eslint": "^3.0.3",
+    "@vue/cli-plugin-typescript": "^3.0.3",
     "@vue/cli-service": "^3.0.3",
+    "@vue/eslint-config-typescript": "^3.0.3",
+    "typescript": "^3.0.0",
+    "vue-cli-plugin-pwa": "^1.0.0-alpha.1",
     "vue-template-compiler": "^2.5.17"
   },
   "eslintConfig": {
@@ -23,11 +37,12 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "eslint:recommended"
+      "eslint:recommended",
+      "@vue/typescript"
     ],
     "rules": {},
     "parserOptions": {
-      "parser": "babel-eslint"
+      "parser": "typescript-eslint-parser"
     }
   },
   "postcss": {
