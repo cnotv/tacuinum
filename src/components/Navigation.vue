@@ -8,7 +8,7 @@
 			<v-icon>fa-chart-line</v-icon>
 		</v-btn>
 
-		<v-btn to="/farms" icon>
+		<v-btn to="/drugs" icon>
 			<v-icon>fa-pills</v-icon>
 		</v-btn>
 

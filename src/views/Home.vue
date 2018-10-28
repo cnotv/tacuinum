@@ -26,18 +26,18 @@
         <v-flex xs12 lg6>
           <v-card color="primary">
             <v-card-title class="headline font-weight-regular blue-grey white--text">
-              <v-icon class="white--text px-4">fa-pills</v-icon>Farms
+              <v-icon class="white--text px-4">fa-pills</v-icon>Drugs
             </v-card-title>
 
             <v-card-text class="px-0">
               <img src="" height="300" width="100%" class="placeholder" alt="Graph number/time">
-              <p>Total farms: 20864</p>
+              <p>Total drugs: 20864</p>
             </v-card-text>
 
             <v-card-actions>
-              <v-btn to="/farms">
+              <v-btn to="/drugs">
                 <v-icon left>fa-search</v-icon>
-                Search for farm
+                Search for drug
               </v-btn>
             </v-card-actions>
           </v-card>

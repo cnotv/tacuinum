@@ -8,7 +8,7 @@
           </v-card-title>
 
           <v-card-text class="px-0">
-            <img src="" height="300" width="200" class="placeholder" alt="Farm name">
+            <img src="" height="300" width="200" class="placeholder" alt="Drug name">
             <h3>Description</h3>
             <p>Lorem ipsum</p>
           </v-card-text>
@@ -40,7 +40,7 @@
 
 <script>
 export default {
-  name: 'farm'
+  name: 'drug'
 }
 </script>
 

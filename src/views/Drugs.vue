@@ -12,7 +12,7 @@
     <v-flex xs12 lg12>
       <v-data-table
         :headers="headers "
-        :items="farms"
+        :items="drugs"
         :search="search"
         class="elevation-1"
       >
@@ -25,7 +25,7 @@
           <td>{{ props.item.disease }}</td>
           <td>{{ props.item.case }}</td>
           <td>
-            <v-btn to="/farm" icon>
+            <v-btn to="/drug" icon>
               <v-icon>fa-edit</v-icon>
             </v-btn>
           </td>
@@ -37,21 +37,20 @@
 
 <script>
 export default {
-  name: 'farms',
+  name: 'drugs',
   data () {
     return {
       search: '',
       headers: [
-        { text: 'Farms', value: 'name' },
+        { text: 'Drugs', value: 'name' },
         { text: 'Types', value: 'type' },
         { text: 'Formats', value: 'format' },
         { text: 'Equivalents', value: 'equivalent' },
         { text: 'Incompatibilities', value: 'incompatibility' },
         { text: 'Diseases', value: 'disease' },
         { text: 'Cases', value: 'case' },
-        { text: 'Action' },
       ],
-      farms: [
+      drugs: [
         {
           value: false,
           name: 'Frozen Yogurt',

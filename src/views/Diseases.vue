@@ -3,7 +3,7 @@
     <v-layout row wrap>
       <v-flex xs12 lg6>
         <v-card color="primary">
-          <h2>Available farms</h2>
+          <h2>Available drugs</h2>
           <h2>Available terapies</h2>
         </v-card>
       </v-flex>
