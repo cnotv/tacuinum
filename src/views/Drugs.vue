@@ -8,8 +8,7 @@
         single-line
         hide-details
       ></v-text-field>
-    </v-flex>
-    <v-flex xs12 lg12>
+      
       <v-data-table
         :headers="headers "
         :items="drugs"
@@ -17,18 +16,15 @@
         class="elevation-1"
       >
         <template slot="items" slot-scope="props">
-          <td>{{ props.item.name }}</td>
-          <td>{{ props.item.type }}</td>
-          <td>{{ props.item.format }}</td>
-          <td>{{ props.item.equivalent }}</td>
-          <td>{{ props.item.incompatibility }}</td>
-          <td>{{ props.item.disease }}</td>
-          <td>{{ props.item.case }}</td>
-          <td>
-            <v-btn to="/drug" icon>
-              <v-icon>fa-edit</v-icon>
-            </v-btn>
-          </td>
+          <router-link tag="tr" to="/drug">
+            <td>{{ props.item.name }}</td>
+            <td>{{ props.item.type }}</td>
+            <td>{{ props.item.format }}</td>
+            <td>{{ props.item.equivalent }}</td>
+            <td>{{ props.item.incompatibility }}</td>
+            <td>{{ props.item.disease }}</td>
+            <td>{{ props.item.case }}</td>
+          </router-link>
         </template>
       </v-data-table>
     </v-flex>

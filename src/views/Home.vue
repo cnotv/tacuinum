@@ -3,8 +3,8 @@
     <v-container grid-list-md text-xs-center>
       <v-layout row wrap>
         <v-flex xs12 lg6>
-          <v-card color="primary">
-            <v-card-title class="headline font-weight-regular blue-grey white--text">
+          <v-card>
+            <v-card-title class="headline font-weight-regular primary white--text">
               <v-icon class="white--text px-4">fa-heartbeat</v-icon>Cases
             </v-card-title>
 
@@ -24,8 +24,8 @@
         </v-flex>
 
         <v-flex xs12 lg6>
-          <v-card color="primary">
-            <v-card-title class="headline font-weight-regular blue-grey white--text">
+          <v-card>
+            <v-card-title class="headline font-weight-regular primary white--text">
               <v-icon class="white--text px-4">fa-pills</v-icon>Drugs
             </v-card-title>
 
@@ -44,8 +44,8 @@
         </v-flex>
 
         <v-flex xs12 lg6>
-          <v-card color="primary">
-            <v-card-title class="headline font-weight-regular blue-grey white--text">
+          <v-card>
+            <v-card-title class="headline font-weight-regular primary white--text">
               <v-icon class="white--text px-4">fa-bug</v-icon>Diseases
             </v-card-title>
 
@@ -57,8 +57,8 @@
         </v-flex>
 
         <v-flex xs12 lg6>
-          <v-card color="primary">
-            <v-card-title class="headline font-weight-regular blue-grey white--text">
+          <v-card>
+            <v-card-title class="headline font-weight-regular primary white--text">
               <v-icon class="white--text px-4">fa-user-md</v-icon>Symptoms
             </v-card-title>
 

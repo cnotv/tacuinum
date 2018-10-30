@@ -1,8 +1,8 @@
 <template>
-  <div id="app">
+  <v-app id="app">
     <navigation/>
     <router-view/>
-  </div>
+  </v-app>
 </template>
 
 <style>
@@ -26,6 +26,7 @@ export default {
   name: 'app',
   components: {
     Navigation
-  }
+  },
 }
+
 </script>

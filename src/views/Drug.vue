@@ -2,7 +2,7 @@
   <v-container grid-list-md text-xs-center>
     <v-layout row wrap>
       <v-flex xs12 lg6>
-        <v-card color="primary">
+        <v-card>
           <v-card-title class="px-0">
             <h2>Name</h2>
           </v-card-title>
@@ -16,7 +16,7 @@
       </v-flex>
 
       <v-flex xs12 lg6>
-        <v-card color="primary">
+        <v-card>
           <section>
             <h3>Equivalent</h3>
           </section>
