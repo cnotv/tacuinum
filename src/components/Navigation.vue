@@ -3,7 +3,7 @@
 		<v-avatar
 			size="36px"
 		>
-			<v-btn to="/settings" icon>
+			<v-btn to="/profile" icon>
 				<v-icon
 				class="white--text"
 				>fa-user</v-icon>

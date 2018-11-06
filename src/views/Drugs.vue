@@ -18,12 +18,11 @@
         <template slot="items" slot-scope="props">
           <router-link tag="tr" to="/drug">
             <td>{{ props.item.name }}</td>
+            <td>{{ props.item.actipri }}</td>
             <td>{{ props.item.type }}</td>
             <td>{{ props.item.format }}</td>
             <td>{{ props.item.equivalent }}</td>
             <td>{{ props.item.incompatibility }}</td>
-            <td>{{ props.item.disease }}</td>
-            <td>{{ props.item.case }}</td>
           </router-link>
         </template>
       </v-data-table>
@@ -39,113 +38,102 @@ export default {
       search: '',
       headers: [
         { text: 'Drugs', value: 'name' },
+        { text: 'Principio Attivo', value: 'actipri' },
         { text: 'Types', value: 'type' },
         { text: 'Formats', value: 'format' },
         { text: 'Equivalents', value: 'equivalent' },
         { text: 'Incompatibilities', value: 'incompatibility' },
-        { text: 'Diseases', value: 'disease' },
-        { text: 'Cases', value: 'case' },
       ],
       drugs: [
         {
           value: false,
           name: 'Frozen Yogurt',
+          actipri: 'Frozen Yogurt',
           type: 'tablet',
           format: '1g, 10g',
           equivalent: 159,
           incompatibility: 6.0,
-          disease: 24,
-          case: 4.0,
         },
         {
           value: false,
           name: 'Ice cream sandwich',
+          actipri: 'Ice cream sandwich',
           type: 'tablet',
           format: '1g, 10g',
           equivalent: 237,
           incompatibility: 9.0,
-          disease: 37,
-          case: 4.3,
         },
         {
           value: false,
           name: 'Eclair',
+          actipri: 'Eclair',
           type: 'tablet',
           format: '1g, 10g',
           equivalent: 262,
           incompatibility: 16.0,
-          disease: 23,
-          case: 6.0,
         },
         {
           value: false,
           name: 'Cupcake',
+          actipri: 'Cupcake',
           type: 'tablet',
           format: '1g, 10g',
           equivalent: 305,
           incompatibility: 3.7,
-          disease: 67,
-          case: 4.3,
         },
         {
           value: false,
           name: 'Gingerbread',
+          actipri: 'Gingerbread',
           type: 'tablet',
           format: '1g, 10g',
           equivalent: 356,
           incompatibility: 16.0,
-          disease: 49,
-          case: 3.9,
         },
         {
           value: false,
           name: 'Jelly bean',
+          actipri: 'Jelly bean',
           type: 'tablet',
           format: '1g, 10g',
           equivalent: 375,
           incompatibility: 0.0,
-          disease: 94,
-          case: 0.0,
         },
         {
           value: false,
           name: 'Lollipop',
+          actipri: 'Lollipop',
           type: 'tablet',
           format: '1g, 10g',
           equivalent: 392,
           incompatibility: 0.2,
-          disease: 98,
-          case: 0,
         },
         {
           value: false,
           name: 'Honeycomb',
+          actipri: 'Honeycomb',
           type: 'tablet',
           format: '1g, 10g',
           equivalent: 408,
           incompatibility: 3.2,
-          disease: 87,
-          case: 6.5,
         },
         {
           value: false,
           name: 'Donut',
+          actipri: 'Donut',
           type: 'tablet',
           format: '1g, 10g',
           equivalent: 452,
           incompatibility: 25.0,
-          disease: 51,
-          case: 4.9,
         },
         {
           value: false,
           name: 'KitKat',
+          actipri: 'KitKat',
           type: 'tablet',
           format: '1g, 10g',
           equivalent: 518,
           incompatibility: 26.0,
-          disease: 65,
-          case: 7,
         }
       ]
     }

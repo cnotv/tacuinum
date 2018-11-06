@@ -8,8 +8,9 @@
               <v-icon class="white--text px-4">fa-heartbeat</v-icon>Cases
             </v-card-title>
 
+            <img src="" height="300" width="100%" class="placeholder" alt="Graph number/time">
+
             <v-card-text class="px-0">
-              <img src="" height="300" width="100%" class="placeholder" alt="Graph number/time">
               <p>Total cases: 12124</p>
               <p>Followed therapies: 123</p>
             </v-card-text>
@@ -29,8 +30,9 @@
               <v-icon class="white--text px-4">fa-pills</v-icon>Drugs
             </v-card-title>
 
+            <img src="" height="300" width="100%" class="placeholder" alt="Graph number/time">
+
             <v-card-text class="px-0">
-              <img src="" height="300" width="100%" class="placeholder" alt="Graph number/time">
               <p>Total drugs: 20864</p>
             </v-card-text>
 
@@ -49,8 +51,9 @@
               <v-icon class="white--text px-4">fa-bug</v-icon>Diseases
             </v-card-title>
 
+            <img src="" height="300" width="100%" class="placeholder" alt="Graph number/time">
+
             <v-card-text class="px-0">
-              <img src="" height="300" width="100%" class="placeholder" alt="Graph number/time">
               <p>21603 diseases diagnosticated</p>
             </v-card-text>
           </v-card>
@@ -62,8 +65,9 @@
               <v-icon class="white--text px-4">fa-user-md</v-icon>Symptoms
             </v-card-title>
 
+            <img src="" height="300" width="100%" class="placeholder" alt="Graph number/time">
+
             <v-card-text class="px-0">
-              <img src="" height="300" width="100%" class="placeholder" alt="Graph number/time">
             </v-card-text>
 
             <v-card-actions>

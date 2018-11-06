@@ -41,5 +41,15 @@ export default new Router({
       name: 'drug',
       component: () => import(/* webpackChunkName: "drug" */ './views/Drug.vue')
     },
+    {
+      path: '/settings',
+      name: 'settings',
+      component: () => import(/* webpackChunkName: "settings" */ './views/Settings.vue')
+    },
+    {
+      path: '/profile',
+      name: 'profile',
+      component: () => import(/* webpackChunkName: "profile" */ './views/Profile.vue')
+    },
   ]
 })
