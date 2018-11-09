@@ -1,10 +1,22 @@
 <template>
-  <v-container grid-list-md>
+  <v-container grid-list-xl>
     <v-layout row wrap>
       <v-flex xs12 lg6>
         <v-card>
           <v-card-title>
-            <h2>Preferences</h2>
+            <h2>Your profile</h2>
+          </v-card-title>
+          <v-card-text>
+            <p>Name</p>
+            <p>Extra info</p>
+          </v-card-text>
+        </v-card>
+      </v-flex>
+
+      <v-flex xs12 lg6>
+        <v-card>
+          <v-card-title>
+            <h2>Keep your data synchronized</h2>
           </v-card-title>
 
           <v-card-text>

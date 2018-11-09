@@ -1,20 +1,46 @@
 <template>
-  <v-container grid-list-md text-xs-center>
+  <v-container grid-list-xl>
     <v-layout row wrap>
-      <v-flex xs12 lg6>
+      <v-flex xs12 lg8>
         <v-card>
-          <h2>Feelings</h2>
-          <h2>Amount</h2>
-          <h2>Areas</h2>
-          <h2>Duration</h2>
-          <h2>Last time</h2>
-          <h2>Related</h2>
+          <v-card-title>
+            <h2>Symptoms</h2>
+          </v-card-title>
 
-          <v-divider/>
-          <h2>Proposed therapies</h2>
-          <v-btn to="/cases">
-            <v-icon left>fa-play</v-icon>
-            Start therapy
+          <v-card-text>
+            <p>Feelings</p>
+            <p>Amount</p>
+            <p>Areas</p>
+            <p>Duration</p>
+            <p>Last time</p>
+            <p>Related</p>
+          </v-card-text>
+        </v-card>
+      </v-flex>
+
+      <v-flex xs12 lg4>
+        <v-card>
+          <v-card-title>
+            <h2>Proposed therapies</h2>
+          </v-card-title>
+
+          <v-card-text>
+            <v-checkbox
+              v-for="(therapy, i) in therapies"
+              :key="i"
+              :label="therapy.name"
+              required
+            ></v-checkbox>
+          </v-card-text>
+
+          <v-btn color="secondary">
+            <v-icon left>fa-plus</v-icon>
+            Add therapy
+          </v-btn>
+
+          <v-btn to="/cases" color="primary">
+            <v-icon left>fa-heartbeat</v-icon>
+            Create new case
           </v-btn>
         </v-card>
       </v-flex>
@@ -25,5 +51,16 @@
 <script>
 export default {
   name: 'Symptoms',
+  data() {
+    return {
+      therapies: [
+        { name: 'Theraphy 1' },
+        { name: 'Theraphy 2' },
+        { name: 'Theraphy 3' },
+        { name: 'Theraphy 4' },
+        { name: 'Theraphy 5' },
+      ]
+    }
+  }
 }
 </script>

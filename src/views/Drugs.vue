@@ -1,33 +1,37 @@
 <template>
-  <v-layout row wrap>
-    <v-flex xs12 lg12>
-      <v-text-field
-        v-model="search"
-        append-icon="fa-search"
-        label="Search"
-        single-line
-        hide-details
-      ></v-text-field>
-      
-      <v-data-table
-        :headers="headers "
-        :items="drugs"
-        :search="search"
-        class="elevation-1"
-      >
-        <template slot="items" slot-scope="props">
-          <router-link tag="tr" to="/drug">
-            <td>{{ props.item.name }}</td>
-            <td>{{ props.item.actipri }}</td>
-            <td>{{ props.item.type }}</td>
-            <td>{{ props.item.format }}</td>
-            <td>{{ props.item.equivalent }}</td>
-            <td>{{ props.item.incompatibility }}</td>
-          </router-link>
-        </template>
-      </v-data-table>
-    </v-flex>
-  </v-layout>
+  <v-container grid-list-xl>
+    <v-layout row wrap>
+      <v-flex xs12 lg12>
+        <v-text-field
+          v-model="search"
+          append-icon="fa-search"
+          label="Search"
+          single-line
+          hide-details
+        ></v-text-field>
+        
+        <br>
+
+        <v-data-table
+          :headers="headers "
+          :items="drugs"
+          :search="search"
+          class="elevation-1"
+        >
+          <template slot="items" slot-scope="props">
+            <router-link tag="tr" to="/drug">
+              <td>{{ props.item.name }}</td>
+              <td>{{ props.item.actipri }}</td>
+              <td>{{ props.item.type }}</td>
+              <td>{{ props.item.format }}</td>
+              <td>{{ props.item.equivalent }}</td>
+              <td>{{ props.item.incompatibility }}</td>
+            </router-link>
+          </template>
+        </v-data-table>
+      </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>
